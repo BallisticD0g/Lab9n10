@@ -73,6 +73,7 @@ main {
 }
 
 /* Responsive Stuff Here! */
+@media (min-width: 999px ) {
 
 header {
     display: flex;
@@ -95,8 +96,12 @@ main {
     margin: 1em 0 0 0;
 }
     
-main article { grid-area: 1 / 1 / 2 / 2; }
-main aside { grid-area: 1 / 2 / 2 / 3; }
+main article { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+main aside { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
 
 main article ul {
     display: grid;
@@ -104,7 +109,7 @@ main article ul {
     grid-template-rows:repeat(2, 1fr);
     grid-column-gap: 1.2em;
     grid-row-gap: 2em;
-    }
+}
     
 main article ul li:nth-of-type(1) { 
     grid-area: 1 / 1 / 2 / 2; 
@@ -122,3 +127,4 @@ main article ul li:nth-of-type(5) {
     grid-area: 2 / 2 / 3 / 3; 
 }
 
+}
